@@ -1,19 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./App.css";
-import ComponenteFormularioTarea from "./componentes/ComponenteFormularioTarea";
-import ListaDeTareas from "./componentes/ListadeTareas";
-import Tarea from "./componentes/Tarea";
-import { ListGroupItem } from "react-bootstrap";
+import Footer from "./componentes/Footer";
+import FormularioTarea from "./componentes/FormularioTarea";
 
 function App() {
   return (
     <>
-      <main className="container  m-5 p-4 ">
-        <h1 className="mb-5">Lista de tareas</h1>
-        <ComponenteFormularioTarea />
+      <main>
+        <h1 className="mb-5 text-center">Lista de tareas</h1>
+        <FormularioTarea />
       </main>
-      <footer></footer>
+      <Footer></Footer>
     </>
   );
 }

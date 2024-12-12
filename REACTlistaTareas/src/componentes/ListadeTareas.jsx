@@ -2,12 +2,12 @@ import React from "react";
 import Tarea from "./Tarea";
 import { ListGroup } from "react-bootstrap";
 
-const ListaDeTareas = () => {
+const ListaDeTareas = ({ listaTareas }) => {
   return (
     <ListGroup>
-      <Tarea />
-      <Tarea />
-      <Tarea />
+      {listaTareas.map((tarea) => (
+        <Tarea key={tarea} tarea={tarea}></Tarea>
+      ))}
     </ListGroup>
   );
 };

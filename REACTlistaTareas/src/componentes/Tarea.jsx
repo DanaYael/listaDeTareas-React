@@ -1,19 +1,16 @@
 import React from "react";
+import { XCircle } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 import { ListGroup } from "react-bootstrap";
 
-const Tarea = () => {
+const Tarea = ({ tarea }) => {
   return (
-    <section className=" justify-content ">
-      <ListGroup>
-        <ListGroup.Item className="d-flex justify-content-between">
-          Planificar
-          <Button variant="danger " id="button-addon2">
-            <i className="bi bi-plus-circle"></i>
-          </Button>
-        </ListGroup.Item>
-      </ListGroup>
-    </section>
+    <ListGroup.Item className="d-flex justify-content-between">
+      {tarea}
+      <Button variant="danger " onClick={() => borrarTarea(tarea)}>
+        <XCircle></XCircle>
+      </Button>
+    </ListGroup.Item>
   );
 };
 

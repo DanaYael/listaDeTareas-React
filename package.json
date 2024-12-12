@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-bootstrap-icons": "^1.11.5",
+    "react-hook-form": "^7.54.0"
+  }
+}

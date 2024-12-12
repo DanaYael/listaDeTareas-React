@@ -1,21 +1,14 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: bisque;
-}
-
 main {
-  align-items: center; /* Centrado vertical */
-  max-height: 100vh; /* Altura total de la pantalla */
-  min-height: 80vh; /* Altura total de la pantalla */
-  width: 100vw;
-  background-color: cornsilk;
-  margin-bottom: 100px;
-}
-
-#roots {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  align-content: center;
+  min-height: 85vh;
+  max-width: 80vw;
+  margin: 20px;
+  flex: 1;
+}
+
+#root {
+  min-width: 80vw;
+  flex-grow: 1;
 }
